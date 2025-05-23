@@ -1,0 +1,48 @@
+#body {
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'Inter';
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1565D8;
+    align-items: center;
+}
+
+#titulo {
+    text-align: left;
+    margin-left: 80px;
+    color: #E5E5E5;
+    font-size: 42px;
+    width: bold;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+#menu-lista {
+    display: flex;
+    flex-direction: row;
+}
+
+.elemento-menu {
+    margin-left: 30px;
+    list-style: none;
+}
+
+.elemento-menu a {
+    text-decoration: none;
+    color: #E5E5E5
+}
+
+/* caixa do filme*/
+#caixa-filme {
+    background-color: #1565D8;
+}

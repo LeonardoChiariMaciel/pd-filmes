@@ -1,0 +1,23 @@
+{
+  "name": "pd-filmes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch-filmes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoChiariMaciel/pd-filmes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardoChiariMaciel/pd-filmes/issues"
+  },
+  "homepage": "https://github.com/LeonardoChiariMaciel/pd-filmes#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
