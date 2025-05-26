@@ -26,6 +26,7 @@ fetch(URL)
                 <p><!-- Gênero não disponível --></p>
                 <p>${filme.vote_average}</p>
                 <a href="https://www.themoviedb.org/movie/${filme.id}" target="_blank">ver no TMDB.com</a>
+                <button class="adicionar-lista" onclick="pegarFilme(this)">Adicionar à Minha Lista</button>
               </div>
             </div>
           </article>
@@ -43,5 +44,4 @@ fetch(URL)
     // Salva o novo HTML
     fs.writeFileSync('leo.html', html, 'utf8');
     console.log('Filmes atualizados em leo.html!');
-  })
-  .catch(err => console.error(err));
+  }).catch(err => console.error(err));
