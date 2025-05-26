@@ -11,10 +11,23 @@ fetch(URL)
     let filmesHtml = '';
     filmes.forEach(filme => {
       filmesHtml += `
-        <li class="caixa-filme">
+        <li>
           <article class="filme">
-            <img src="https://image.tmdb.org/t/p/w200${filme.poster_path}" alt="${filme.title}">
-            <h2>${filme.title}</h2>
+            <figure>
+              <img src="https://image.tmdb.org/t/p/w200${filme.poster_path}" alt="${filme.title}">
+              <figcaption>${filme.title} Poster</figcaption>
+            </figure>
+            <div class="filme-conteudo">
+              <h2>${filme.title}</h2>
+              <p class="filme-descricao">${filme.overview}</p>
+              <div class="filme-footer">
+                <p>${filme.release_date}</p>
+                <p><!-- Diretor não disponível --></p>
+                <p><!-- Gênero não disponível --></p>
+                <p>${filme.vote_average}</p>
+                <a href="https://www.themoviedb.org/movie/${filme.id}" target="_blank">ver no TMDB.com</a>
+              </div>
+            </div>
           </article>
         </li>
       `;
