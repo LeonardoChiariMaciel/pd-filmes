@@ -46,7 +46,6 @@
       lista.forEach(filme => {
           const li = document.createElement('li');
           li.innerHTML = filme.html;
-          // Remove o botão para não permitir adicionar de novo
           const botao = li.querySelector('button');
           if (botao) botao.remove();
           ul.appendChild(li);
